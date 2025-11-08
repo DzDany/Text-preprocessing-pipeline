@@ -33,22 +33,6 @@ The preprocessing pipeline follows these logical steps:
 
 ---
 
-## 🧩 Example Workflow
-
-```python
-import nltk
-from nltk.tokenize import word_tokenize
-from nltk.corpus import stopwords
-from nltk.stem import WordNetLemmatizer
-import string
-
-# 1️⃣ Tokenization
-text = "Cats are running faster than the dogs."
-tokens = word_tokenize(text)
-
-# 2️⃣ Cleaning
-stop_words = set(stopwords.words("english"))
-tokens = [t for t in tokens if t.lower() not in stop_words and t not in string.punctuation]
 
 # 3️⃣ Lemmatization
 lemmatizer = WordNetLemmatizer()
