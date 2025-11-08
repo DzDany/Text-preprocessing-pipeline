@@ -33,10 +33,3 @@ The preprocessing pipeline follows these logical steps:
 
 ---
 
-
-# 3️⃣ Lemmatization
-lemmatizer = WordNetLemmatizer()
-lemmas = [lemmatizer.lemmatize(t) for t in tokens]
-
-print("Original tokens:", tokens)
-print("Lemmatized:", lemmas)
